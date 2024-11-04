@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Flame", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #efe8db;
+}
+
+/* NavBar Style */
+.navbar {
+  display: flex;
+  padding-left: 12rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  gap: 2rem;
+  background-color: #efe8db;
+  /* background-color: #f5e3c3; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 3.5rem;
+}
+
+.navlinks-1 {
+  /* font-family: "Flame", sans-serif; */
+  color: #502314;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navlinks-1 li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: inherit;
+}
+
+.navlinks-1 li a:hover {
+  /* background-color: #eee; */
+  border: 4px solid #f4daad;
+  padding: 0.5rem 0.7rem;
+  border-radius: 40px;
+  display: inline-block;
+  color: #d62300;
+}
+
+/* Swiper */
+.slider-container {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1;
+}
+
+/* Store Locator Style */
+.store-locator {
+  /* width: 100%; */
+  max-width: 1200px;
+  /* margin: 0 auto;
+  padding: 2rem; */
+  padding: 2rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f7f3eb;
+  border-radius: 8px;
+}
+
+.store-locator-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #502314;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  color: #502314;
+  margin-bottom: 1.5rem;
+}
+
+.search-form {
+  position: relative;
+  width: 25rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 3rem;
+  border: 2px solid #502314;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #502314;
+  background-color: white;
+}
+
+.search-input::placeholder {
+  color: rgba(80, 35, 20, 0.6);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #d62300;
+}
+
+.search-button {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #502314;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: #d62300;
+}
+
+/* Download Section */
+.download-container {
+  background-color: #d72300;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6rem;
+  /* border: 4px solid white; */
+}
+
+.download-container p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 200;
+}
+
+.download-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  /* border: 1px solid white; */
+  /* max-width: 488px;
+  margin-bottom: -7px; */
+}
+
+.download-content-2 {
+  margin-right: 10rem;
+  margin-top: 4rem;
+  /* border: 2px solid white; */
+  width: 45%;
+}
+
+.download-content-3 {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.download-content-2a h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Card style */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-left: 10rem;
+  cursor: pointer;
+}
+
+.burger1 {
+  margin-right: 2rem;
+  max-width: 375px;
+  padding: 15px;
+}
+
+.image {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  border-radius: 4%;
+  cursor: pointer;
+  width: 100%;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-size: 1.7rem;
+}
+
+.content {
+  margin-top: -1rem;
+  font-size: 1rem;
+  color: #88503e;
+}
+
+.News {
+  margin-left: 11rem;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  /* padding-top: 7rem; */
+}
+.order-body {
+  background-image: url(../src/assets/THEWHOOPER.jpg);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #efe2cf;
+  position: relative;
+}
+.modal-container {
+  background-color: #efe2cf;
+}
+.mod {
+  background-color: #f4ebdc;
+  display: flex;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.fButton {
+  border: none;
+  background-color: #f4ebdc;
+}
+.sButton {
+  border: none;
+  background-color: #f4ebdc;
+}
+.tButton {
+  border: none;
+  background-color: #f4ebdc;
+}
+.modb {
+  padding-left: 30px;
+}
+.bigcont {
+  width: 500px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.modal-container {
+  width: 90%;
+  padding: 30px;
+}
+.footer-container {
+  background-color: #502314;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.footer-copyright-and-icons {
+  display: flex;
+  padding-top: 1rem;
+
+  /* justify-content: space-between; */
+}
+
+.footer-copyright-title {
+  margin-left: 11rem;
+  color: white;
+  margin-right: 30rem;
+}
+
+.footer-row1 {
+  margin-left: 15rem;
+  margin-top: 3rem;
+}
+
+.footer-row2 {
+  margin-left: 6rem;
+  margin-top: 3rem;
+}
+
+.footer-row3 {
+  margin-left: 10rem;
+  margin-top: 3rem;
+}
+
+.footer-title {
+  margin-top: 3rem;
+  margin-left: 12rem;
+}
+
+.footer-row-title {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #fff;
+  width: 76%;
+  margin: 30px auto;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-row-link {
+  text-decoration: none;
+  margin-top: 2rem;
+  line-height: 1;
+  /* display: flex;
+  gap: 15px; */
+  /* line-height: 0; */
+}
+
+.footer-row-link a {
+  color: #fff;
+}
+.qtag {
+  display: none;
+}
+.mod:hover .qtag {
+  display: block;
+}
+.qtag {
+  font-size: 11px;
+}
